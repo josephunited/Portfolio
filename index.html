@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joseph Benedict — B.Tech Computer Science student, technology enthusiast, keyboardist for Band YUVA, and music producer. Explore projects, skills, and achievements.">
+  <meta name="keywords" content="Joseph Benedict, portfolio, computer science, B.Tech, developer, keyboardist, technology, YUVA band">
+  <meta name="author" content="Joseph Benedict">
+  <title>Joseph Benedict | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======= CURSOR GLOW ======= -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ======= ANIMATED BACKGROUND ======= -->
+  <div class="bg-particles" aria-hidden="true">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Joseph. 🎹</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <i data-lucide="menu" id="menuIcon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Coding in Harmony
+        </div>
+        <h1>Hi, I'm <br><span class="gradient-text">Joseph Benedict</span></h1>
+        <p class="hero-tagline">Computer Science Student · Keyboardist @ Band YUVA · Music Producer</p>
+        <p class="hero-description">
+          Balancing the logical precision of software engineering and artificial intelligence with the creative soul of music production, keyboard performances, and sound design.
+        </p>
+
+        <!-- Playable virtual piano keyboard -->
+        <div class="piano-container">
+          <div class="piano-label">
+            <span>🎹 Interactive Key Synth (Play a Chord)</span>
+          </div>
+          <div class="piano-keys">
+            <!-- Low to high notes (C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5) -->
+            <div class="white-key" data-note="261.63" title="C4"></div>
+            <div class="black-key" data-note="277.18" title="C#4"></div>
+            <div class="white-key" data-note="293.66" title="D4"></div>
+            <div class="black-key" data-note="311.13" title="D#4"></div>
+            <div class="white-key" data-note="329.63" title="E4"></div>
+            <div class="white-key" data-note="349.23" title="F4"></div>
+            <div class="black-key" data-note="369.99" title="F#4"></div>
+            <div class="white-key" data-note="392.00" title="G4"></div>
+            <div class="black-key" data-note="415.30" title="G#4"></div>
+            <div class="white-key" data-note="440.00" title="A4"></div>
+            <div class="black-key" data-note="466.16" title="A#4"></div>
+            <div class="white-key" data-note="493.88" title="B4"></div>
+            <div class="white-key" data-note="523.25" title="C5"></div>
+          </div>
+        </div>
+
+        <div class="hero-buttons" style="margin-top: 30px;">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-open" style="width:18px;height:18px"></i>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="download" style="width:18px;height:18px"></i>
+            Download Resume
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3 id="statProjects">0</h3>
+            <p>Tech & Audio Projects</p>
+          </div>
+          <div class="hero-stat">
+            <h3 id="statSkills">0</h3>
+            <p>Trinity Keyboard Certification</p>
+          </div>
+          <div class="hero-stat">
+            <h3 id="statEvents">0</h3>
+            <p>Inter-Collegiate Wins</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-wrapper">
+          <img src="images/profile.png" alt="Joseph Benedict — Professional Portrait" id="heroProfileImg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT SECTION ======= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ About Me</span>
+        <h2 class="section-title">Harmonizing Tech & <span class="gradient-text">Acoustics</span></h2>
+        <p class="section-subtitle">Bridging logical engineering and musical expression</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm a <strong>B.Tech Computer Science and Engineering</strong> student with a deep passion for
+            software development, artificial intelligence, and sound engineering. I thrive on learning
+            new tools, frameworks, and paradigms that push the boundaries of what's possible, especially in creative tech.
+          </p>
+          <p>
+            Beyond code, I'm an accomplished musician. I am a keyboardist in the popular Malayalam progressive rock band <strong>YUVA</strong>,
+            actively performing on live stages and contributing to collaborative audio and tech initiatives. I have competed in 
+            <strong>10+ major inter-school and inter-collegiate music competitions</strong>, securing several first-prize finishes.
+          </p>
+          <p>
+            My musical discipline is backed by formal training, having successfully completed <strong>Grade 8 in Electronic Keyboard</strong> from Trinity College London. I also engage in music production, synthesizing beats, and composing digital audio works.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight-card">
+              <span class="icon">🎓</span>
+              <h4>B.Tech CSE</h4>
+              <p>Computer Science & Engineering</p>
+            </div>
+            <div class="about-highlight-card">
+              <span class="icon">🎹</span>
+              <h4>Keyboardist @ YUVA</h4>
+              <p>Performing Live Stage Sets</p>
+            </div>
+            <div class="about-highlight-card">
+              <span class="icon">🎚️</span>
+              <h4>Music Producer</h4>
+              <p>Digital Audio & Sound Design</p>
+            </div>
+            <div class="about-highlight-card">
+              <span class="icon">🎼</span>
+              <h4>Grade 8 Certified</h4>
+              <p>Completed Highest Trinity Level</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-section reveal-right">
+          <div class="about-image-card">
+            <img src="images/event.png" alt="Joseph Benedict at YUVA Band performance">
+            <div class="about-image-overlay">
+              <div>
+                <h4>Live with Band YUVA</h4>
+                <p>Expressing energy on stage through synthesizers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EDUCATION SECTION ======= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Education</span>
+        <h2 class="section-title">Academic & <span class="gradient-text">Practical Foundations</span></h2>
+        <p class="section-subtitle">A balanced curriculum covering core computer science principles and advanced musical certification</p>
+      </div>
+
+      <div class="timeline">
+        <!-- B.Tech CSE -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – Present</span>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>Computer Science and Engineering</p>
+            <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 8px;">
+              Focused on building a comprehensive understanding of core CS principles,
+              software development methodologies, and emerging technology paradigms.
+            </p>
+            <div class="coursework-tags">
+              <span class="coursework-tag">Data Structures</span>
+              <span class="coursework-tag">Operating Systems</span>
+              <span class="coursework-tag">Artificial Intelligence</span>
+              <span class="coursework-tag">DBMS</span>
+              <span class="coursework-tag">Computer Networks</span>
+              <span class="coursework-tag">Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trinity College Keyboard -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Trinity College London</span>
+            <h3>Grade 8 in Electronic Keyboard</h3>
+            <p>Practical Music Certification (Completed Grade 8)</p>
+            <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 8px;">
+              Successfully completed the highest practical grade level, demonstrating mastery over complex sight-reading, rhythm synchronization, scales, arpeggios, and performance of classical and modern repertoire.
+            </p>
+            <div class="coursework-tags">
+              <span class="coursework-tag">Advanced Repertoire</span>
+              <span class="coursework-tag">Music Theory</span>
+              <span class="coursework-tag">Acoustic Synthesizers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Higher Secondary</span>
+            <h3>Science Stream</h3>
+            <p>Strong foundation in Mathematics, Physics, and Computer Science that sparked a lifelong passion for engineering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS SECTION ======= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Skills</span>
+        <h2 class="section-title">Technical & <span class="gradient-text">Personal Toolbox</span></h2>
+        <p class="section-subtitle">Technologies and competencies I've honed through projects and practice</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skills-category reveal-left">
+          <h3><span class="icon">⚡</span> Technical Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill purple" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Java</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill cyan" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">C Programming</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">React</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill purple" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">HTML / CSS</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill cyan" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-percent">78%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill purple" data-width="85"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category reveal-right">
+          <h3><span class="icon">🧠</span> Soft Skills</h3>
+          <div class="soft-skills-grid reveal-stagger">
+            <div class="soft-skill-card">
+              <span class="icon">👑</span>
+              <h4>Leadership</h4>
+            </div>
+            <div class="soft-skill-card">
+              <span class="icon">🤝</span>
+              <h4>Teamwork</h4>
+            </div>
+            <div class="soft-skill-card">
+              <span class="icon">💬</span>
+              <h4>Communication</h4>
+            </div>
+            <div class="soft-skill-card">
+              <span class="icon">🧩</span>
+              <h4>Problem Solving</h4>
+            </div>
+            <div class="soft-skill-card">
+              <span class="icon">⏰</span>
+              <h4>Time Management</h4>
+            </div>
+            <div class="soft-skill-card">
+              <span class="icon">🔍</span>
+              <h4>Critical Thinking</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS SECTION ======= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        <p class="section-subtitle">Innovative engineering developments and digital sound arrangements</p>
+      </div>
+
+      <div class="projects-grid reveal-stagger">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/project.png" alt="KSRTC Smart Bus Stop System">
+            <div class="project-card-overlay">
+              <span style="color:white; font-size:0.85rem;">Smart Transportation Solution</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-tag">IoT · Transportation</span>
+            <h3>KSRTC Smart Bus Stop System</h3>
+            <p>A smart transportation management solution featuring real-time bus tracking, route information display, and passenger analytics for an improved commuting experience.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>IoT</span>
+              <span>GPS</span>
+              <span>Dashboard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/event.png" alt="Eco-Friendly Biodegradable Packaging">
+            <div class="project-card-overlay">
+              <span style="color:white; font-size:0.85rem;">Sustainability Innovation</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-tag" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.2);color:#22c55e;">Sustainability</span>
+            <h3>Eco-Friendly Biodegradable Packaging</h3>
+            <p>A sustainable alternative to plastic snack packaging, focused on environmental impact reduction through biodegradable materials and innovative design approaches.</p>
+            <div class="project-tech">
+              <span>Research</span>
+              <span>Design</span>
+              <span>Sustainability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/certificate.png" alt="AI Academic Projects">
+            <div class="project-card-overlay">
+              <span style="color:white; font-size:0.85rem;">AI & Systems Projects</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-tag" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.2);color:#8b5cf6;">AI · Academics</span>
+            <h3>AI & Technology-Based Academic Projects</h3>
+            <p>A collection of academic projects including Operating Systems simulations, intelligent software solutions, and AI-driven applications for practical learning.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Java</span>
+              <span>AI/ML</span>
+              <span>OS Simulation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 (Music) -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/keyboard.png" alt="Music Production and Synth Patches">
+            <div class="project-card-overlay">
+              <span style="color:white; font-size:0.85rem;">Music Production & Arrangements</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-card-tag" style="background:rgba(234,179,8,0.1);border-color:rgba(234,179,8,0.2);color:#eab308;">Music Production</span>
+            <h3>Digital Synthesizer Arrangements & Production</h3>
+            <p>Original sound designs and digital track arrangements. Involves layering virtual synthesizer soundscapes, configuring MIDI controller mappings, and mixing backing tracks used during live performances for Band YUVA.</p>
+            <div class="project-tech">
+              <span>MIDI Routing</span>
+              <span>DAW Orchestration</span>
+              <span>Waveform Modulation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE & ACTIVITIES ======= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Experience</span>
+        <h2 class="section-title">Activities & <span class="gradient-text">Involvement</span></h2>
+        <p class="section-subtitle">Live concert sets, audio mixing, and robotics participation</p>
+      </div>
+
+      <div class="experience-grid reveal-stagger">
+        <div class="experience-card">
+          <span class="icon">🎹</span>
+          <h3>Keyboardist @ Band YUVA</h3>
+          <p>Key synth player in the progressive band <strong>YUVA</strong>. Managed synthesizer layers, backing tracks, and live performances. Connect with us on <a href="https://www.instagram.com/band.yuva/" target="_blank" style="color: var(--accent-cyan); text-decoration: underline; font-weight: 600;">Instagram (@band.yuva)</a>.</p>
+          <span class="year-badge">2023 – Present</span>
+        </div>
+        <div class="experience-card">
+          <span class="icon">🎛️</span>
+          <h3>Music Production</h3>
+          <p>Composed, arranged, and mixed tracks. Completed several music production works, blending MIDI controllers, acoustic elements, and modern DAW synthesis.</p>
+          <span class="year-badge">Sound Design</span>
+        </div>
+        <div class="experience-card">
+          <span class="icon">🤖</span>
+          <h3>Tech Events & ROSCon</h3>
+          <p>Attended ROSCon 2024 in Bangalore, participating in robotics workshops and team-based innovation challenges for engineering solutions.</p>
+          <span class="year-badge">Technology</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= HOBBIES SECTION ======= -->
+  <section class="section" id="hobbies">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Hobbies & Interests</span>
+        <h2 class="section-title">Beyond <span class="gradient-text">Code</span></h2>
+        <p class="section-subtitle">Where creativity meets curiosity</p>
+      </div>
+
+      <div class="hobbies-container">
+        <div class="hobbies-grid reveal-left">
+          <div class="hobby-card">
+            <span class="icon">🎹</span>
+            <h4>Keyboard Playing</h4>
+            <p>Musical expression & creativity</p>
+          </div>
+          <div class="hobby-card">
+            <span class="icon">💻</span>
+            <h4>Programming</h4>
+            <p>Building & creating solutions</p>
+          </div>
+          <div class="hobby-card">
+            <span class="icon">🔬</span>
+            <h4>Tech Exploration</h4>
+            <p>Discovering emerging technologies</p>
+          </div>
+          <div class="hobby-card">
+            <span class="icon">📚</span>
+            <h4>Technical Research</h4>
+            <p>Deep-diving into new domains</p>
+          </div>
+          <div class="hobby-card">
+            <span class="icon">🚀</span>
+            <h4>Innovation Design</h4>
+            <p>Product ideation & prototyping</p>
+          </div>
+          <div class="hobby-card">
+            <span class="icon">🌐</span>
+            <h4>Emerging Tech</h4>
+            <p>AI, IoT & beyond</p>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="hobbies-quote">
+            <span class="icon">🎵</span>
+            <blockquote>
+              "Music plays an important role in my life. As a keyboardist for <a href="https://www.instagram.com/band.yuva/" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">Band YUVA</a>, I enjoy expressing creativity
+              through live performances while maintaining a strong passion for computer science and engineering. 
+              Completing Grade 8 in electronic keyboard taught me that both code and music share a beautiful synergy — both demand 
+              structure, precision, and absolute dedication."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ACHIEVEMENTS SECTION ======= -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Achievements</span>
+        <h2 class="section-title">Milestones & <span class="gradient-text">Recognition</span></h2>
+        <p class="section-subtitle">Key accomplishments along the journey</p>
+      </div>
+
+      <div class="achievements-grid reveal-stagger">
+        <div class="achievement-card">
+          <span class="icon">🎼</span>
+          <h4>Trinity Grade 8</h4>
+          <p>Completed the highest practical grade level in Electronic Keyboard from Trinity College London</p>
+        </div>
+        <div class="achievement-card">
+          <span class="icon">🏆</span>
+          <h4>10+ Music Victories</h4>
+          <p>Won several first-prize awards in 10+ inter-school and inter-collegiate keyboard competitions</p>
+        </div>
+        <div class="achievement-card">
+          <span class="icon">🎹</span>
+          <h4>YUVA Band Concerts</h4>
+          <p>Main keyboard player for progressive rock band YUVA, performing live across multiple venues</p>
+        </div>
+        <div class="achievement-card">
+          <span class="icon">🤖</span>
+          <h4>Tech Project Awards</h4>
+          <p>Developed innovative CSE projects like KSRTC Smart Bus Stop and participated in ROSCon 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= GALLERY SECTION ======= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Gallery</span>
+        <h2 class="section-title">Captured <span class="gradient-text">Moments</span></h2>
+        <p class="section-subtitle">A visual journey through events, performances, and projects</p>
+      </div>
+
+      <div class="gallery-grid reveal-stagger">
+        <div class="gallery-item" data-caption="Professional Portrait">
+          <img src="images/profile.png" alt="Professional photograph" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div><h4>Professional Portrait</h4><p>Portfolio Headshot</p></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Technology Event Participation">
+          <img src="images/event.png" alt="Technology event" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div><h4>Tech Conference</h4><p>Event Participation</p></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Keyboard Performance">
+          <img src="images/keyboard.png" alt="Keyboard performance" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div><h4>Keyboard Performance</h4><p>Musical Expression</p></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Smart Bus Stop Project">
+          <img src="images/project.png" alt="Project screenshot" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div><h4>Project Dashboard</h4><p>KSRTC Smart Bus Stop</p></div>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Certificates & Achievements">
+          <img src="images/certificate.png" alt="Certificates" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div><h4>Certificates</h4><p>Achievements & Awards</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal-left">
+          <h3>Get in Touch</h3>
+          <p>I'm always open to new opportunities, collaborations, and conversations about technology and innovation.</p>
+
+          <div class="contact-details">
+            <a href="mailto:josephbenedict@email.com" class="contact-item" id="contactEmail">
+              <div class="icon-box">📧</div>
+              <div class="contact-item-text">
+                <h4>Email</h4>
+                <p>josephbenedict@email.com</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/josephbenedict" target="_blank" class="contact-item" id="contactLinkedIn">
+              <div class="icon-box">💼</div>
+              <div class="contact-item-text">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/josephbenedict</p>
+              </div>
+            </a>
+            <a href="https://github.com/josephbenedict" target="_blank" class="contact-item" id="contactGitHub">
+              <div class="icon-box">🐙</div>
+              <div class="contact-item-text">
+                <h4>GitHub</h4>
+                <p>github.com/josephbenedict</p>
+              </div>
+            </a>
+            <div class="contact-item" id="contactPhone">
+              <div class="icon-box">📱</div>
+              <div class="contact-item-text">
+                <h4>Phone</h4>
+                <p>+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <form class="contact-form" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="send" style="width:18px;height:18px"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2024 Joseph Benedict. Crafted with passion & code.</p>
+      <div class="footer-links">
+        <a href="https://github.com/josephbenedict" target="_blank" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/josephbenedict" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="mailto:josephbenedict@email.com" aria-label="Email">📧</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
